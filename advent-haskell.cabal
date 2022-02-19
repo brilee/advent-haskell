@@ -1,0 +1,76 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent-haskell
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/advent-haskell#readme>
+homepage:       https://github.com/githubuser/advent-haskell#readme
+bug-reports:    https://github.com/githubuser/advent-haskell/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/advent-haskell
+
+library
+  exposed-modules:
+      AOC
+      Day1
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day14b
+      Day15
+      Day2a
+      Day2b
+      Day3a
+      Day3b
+      Day4a
+      Day4b
+      Day5a
+      Day6
+      Day7a
+      Day7b
+      Day8
+      Day9
+  other-modules:
+      Paths_advent_haskell
+  hs-source-dirs:
+      src
+  ghc-options: -Wunused-binds
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-memocombinators
+    , heap
+    , split
+    , vector
+  default-language: Haskell2010
+
+executable aoc
+  main-is: Main.hs
+  other-modules:
+      Paths_advent_haskell
+  hs-source-dirs:
+      app
+  ghc-options: -Wunused-binds
+  build-depends:
+      advent-haskell
+    , base >=4.7 && <5
+    , containers
+    , data-memocombinators
+    , heap
+    , split
+    , vector
+  default-language: Haskell2010
